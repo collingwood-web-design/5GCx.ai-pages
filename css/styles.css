@@ -886,6 +886,7 @@ p { margin: 0 0 1.1em; }
 .contact::before,
 .site-footer::before { top: 0; }
 .page-head::after { bottom: 0; }
+.site-footer::before { animation: none; }
 
 @keyframes barSweep {
   0% { background-position: -40% 0, 0 0; }
