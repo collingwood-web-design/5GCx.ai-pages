@@ -555,7 +555,7 @@ p { margin: 0 0 1.1em; }
   position: relative;
   margin: 34px 0 0;
   padding: 22px 26px;
-  border-left: 3px solid var(--accent-3);
+  border-left: 3px solid rgba(104, 148, 180, 0.45);
   background: linear-gradient(90deg, rgba(26, 74, 138, 0.35), rgba(63, 67, 126, 0.12) 50%, transparent 85%);
   font: 500 clamp(1.1rem, 1.7vw, 1.3rem)/1.55 var(--font-display);
   color: #fff;
