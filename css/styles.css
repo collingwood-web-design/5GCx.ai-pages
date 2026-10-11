@@ -631,7 +631,6 @@ p { margin: 0 0 1.1em; }
 .mission__statement em {
   font-style: normal;
   color: var(--accent-2);
-  text-shadow: 0 0 24px rgba(243, 111, 33, 0.5);
 }
 
 /* ---------- Contact ---------- */
