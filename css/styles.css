@@ -167,11 +167,11 @@ p { margin: 0 0 1.1em; }
 .btn--primary:hover { background: #ff8340; }
 
 .btn--blue {
-  background: #22364b;
+  background: #17273a;
   color: #fff;
   box-shadow: inset 0 0 0 1px rgba(104, 148, 180, 0.45);
 }
-.btn--blue:hover { background: #2b4359; }
+.btn--blue:hover { background: #22364b; }
 
 .btn--ghost {
   background: #344b62;
