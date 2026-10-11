@@ -254,8 +254,6 @@
   var radar = document.getElementById("radar");
   if (radar) {
     var rState, rRunning = false, rFrame, lastSweep = 0;
-    var rContacts = document.getElementById("r-contacts");
-    var rFused = document.getElementById("r-fused");
     var SENSOR_COLORS = { R: "56,255,165", E: "255,138,61", D: "157,139,255" };
     var SWEEP_SPEED = 1.1;
     var TAU = Math.PI * 2;
@@ -270,20 +268,15 @@
       { a: 5.1, r: 0.66, s: "D" },
       { a: 5.7, r: 0.45, s: "RED" },
       { a: 0.1, r: 0.86, s: "R" }
-    ].map(function (c, i) {
+    ].map(function (c) {
       return {
         a: c.a, r: c.r,
         va: (Math.random() - 0.5) * 0.02,
         vr: (Math.random() - 0.5) * 0.01,
         sensors: c.s.split(""),
-        hit: -10,
-        id: "TRK-" + pad(i + 1)
+        hit: -10
       };
     });
-
-    var fusedCount = contacts.filter(function (c) { return c.sensors.length > 1; }).length;
-    if (rContacts) rContacts.textContent = pad(contacts.length);
-    if (rFused) rFused.textContent = pad(fusedCount);
 
     var setupRadar = function () { rState = fitCanvas(radar); };
 
@@ -346,7 +339,6 @@
       ctx.stroke();
 
       var prevSweep = sweep - dt * SWEEP_SPEED;
-      ctx.font = "500 10px 'JetBrains Mono', monospace";
 
       contacts.forEach(function (c) {
         if (!reduceMotion) {
@@ -397,8 +389,6 @@
           ctx.shadowBlur = 8;
           ctx.strokeRect(-6, -6, 12, 12);
           ctx.restore();
-          ctx.fillStyle = "rgba(217,230,245," + (alpha * 0.9).toFixed(3) + ")";
-          ctx.fillText(c.id, px + 12, py - 10);
         }
       });
 
