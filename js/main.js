@@ -173,7 +173,7 @@
 
     var setupNet = function () {
       netState = fitCanvas(net);
-      var count = Math.round(Math.min(80, (netState.w * netState.h) / 17000));
+      var count = Math.round(Math.min(70, (netState.w * netState.h) / 21000));
       nodes = [];
       for (var i = 0; i < count; i++) {
         nodes.push({
@@ -188,7 +188,7 @@
 
     var drawNet = function (now) {
       var ctx = netState.ctx, w = netState.w, h = netState.h;
-      var maxDist = 175;
+      var maxDist = 160;
       var t = (now || 0) / 1000;
       var n = nodes.length;
       var near = [];
@@ -224,7 +224,7 @@
           if (near[i][k] === undefined || near[j][k] === undefined) continue;
           var closeness = 1 - (edges[e][2] + near[i][k] + near[j][k]) / (3 * maxDist);
           a = nodes[i]; b = nodes[j]; c = nodes[k];
-          ctx.fillStyle = "rgba(90,140,210," + (0.09 * closeness).toFixed(3) + ")";
+          ctx.fillStyle = "rgba(90,140,210," + (0.035 * closeness).toFixed(3) + ")";
           ctx.beginPath();
           ctx.moveTo(a.x, a.y);
           ctx.lineTo(b.x, b.y);
@@ -237,7 +237,7 @@
       ctx.lineWidth = 1;
       for (e = 0; e < edges.length; e++) {
         a = nodes[edges[e][0]]; b = nodes[edges[e][1]];
-        ctx.strokeStyle = "rgba(140,185,240," + (0.6 * (1 - edges[e][2] / maxDist)).toFixed(3) + ")";
+        ctx.strokeStyle = "rgba(130,175,235," + (0.32 * (1 - edges[e][2] / maxDist)).toFixed(3) + ")";
         ctx.beginPath();
         ctx.moveTo(a.x, a.y);
         ctx.lineTo(b.x, b.y);
@@ -247,13 +247,13 @@
       for (i = 0; i < n; i++) {
         a = nodes[i];
         var pulse = 0.5 + 0.5 * Math.sin(t * 1.6 + a.phase);
-        ctx.fillStyle = "rgba(170,205,245," + (0.25 * pulse).toFixed(3) + ")";
+        ctx.fillStyle = "rgba(170,205,245," + (0.12 * pulse).toFixed(3) + ")";
         ctx.beginPath();
-        ctx.arc(a.x, a.y, 3 + pulse * 3, 0, Math.PI * 2);
+        ctx.arc(a.x, a.y, 2 + pulse * 2, 0, Math.PI * 2);
         ctx.fill();
-        ctx.fillStyle = "rgba(210,230,255,0.95)";
+        ctx.fillStyle = "rgba(200,222,250,0.7)";
         ctx.beginPath();
-        ctx.arc(a.x, a.y, 1.6, 0, Math.PI * 2);
+        ctx.arc(a.x, a.y, 1.2, 0, Math.PI * 2);
         ctx.fill();
       }
 
