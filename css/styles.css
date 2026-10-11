@@ -1108,7 +1108,7 @@ p { margin: 0 0 1.1em; }
   letter-spacing: 0.06em;
   color: var(--muted);
 }
-.footer__legal .sep { color: var(--accent); margin: 0 8px; }
+.footer__legal .sep { margin: 0 8px; }
 .footer__legal a {
   color: inherit;
   text-decoration: underline;
