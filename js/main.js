@@ -227,7 +227,7 @@
           var dx = a.x - b.x, dy = a.y - b.y;
           var dist = Math.sqrt(dx * dx + dy * dy);
           if (dist < maxDist) {
-            ctx.strokeStyle = "rgba(104,148,180," + (0.3 * (1 - dist / maxDist)).toFixed(3) + ")";
+            ctx.strokeStyle = "rgba(140,150,235," + (0.35 * (1 - dist / maxDist)).toFixed(3) + ")";
             ctx.lineWidth = 1;
             ctx.beginPath();
             ctx.moveTo(a.x, a.y);
