@@ -709,8 +709,8 @@ p { margin: 0 0 1.1em; }
   padding-bottom: 4px;
 }
 .links a:hover { color: #fff; border-color: #fff; }
-.links__li { display: inline-flex; align-items: center; gap: 8px; }
-.links__li svg { width: 14px; height: 14px; fill: currentColor; }
+.links__li { display: inline-flex; align-items: center; gap: 10px; }
+.links__li svg { width: 18px; height: 18px; flex: none; }
 
 .form { padding: 26px; }
 .form label { display: block; margin-bottom: 18px; }
