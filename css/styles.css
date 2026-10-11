@@ -275,13 +275,13 @@ p { margin: 0 0 1.1em; }
   object-position: 50% 40%;
   filter: saturate(1.1) contrast(1.06);
   transform-origin: 55% 45%;
-  animation: heroPush 24s ease-in-out infinite alternate;
+  animation: heroPush 14s ease-in-out infinite alternate;
   will-change: transform;
 }
 
 @keyframes heroPush {
-  from { transform: scale(1); }
-  to { transform: scale(1.06); }
+  from { transform: scale(1) translate3d(0, 0, 0); }
+  to { transform: scale(1.14) translate3d(-1.5%, 1%, 0); }
 }
 
 .hero__shade {
