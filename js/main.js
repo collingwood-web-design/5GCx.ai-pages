@@ -173,43 +173,90 @@
 
     var setupNet = function () {
       netState = fitCanvas(net);
-      var count = Math.round(Math.min(70, (netState.w * netState.h) / 22000));
+      var count = Math.round(Math.min(80, (netState.w * netState.h) / 17000));
       nodes = [];
       for (var i = 0; i < count; i++) {
         nodes.push({
           x: Math.random() * netState.w,
           y: Math.random() * netState.h,
-          vx: (Math.random() - 0.5) * 0.25,
-          vy: (Math.random() - 0.5) * 0.25
+          vx: (Math.random() - 0.5) * 0.3,
+          vy: (Math.random() - 0.5) * 0.3,
+          phase: Math.random() * Math.PI * 2
         });
       }
     };
 
-    var drawNet = function () {
+    var drawNet = function (now) {
       var ctx = netState.ctx, w = netState.w, h = netState.h;
-      var maxDist = 150;
+      var maxDist = 175;
+      var t = (now || 0) / 1000;
+      var n = nodes.length;
+      var near = [];
+      var i, j, k, a, b, c, dx, dy, dist;
+
       ctx.clearRect(0, 0, w, h);
-      for (var i = 0; i < nodes.length; i++) {
-        var a = nodes[i];
+
+      for (i = 0; i < n; i++) {
+        a = nodes[i];
         a.x += a.vx; a.y += a.vy;
         if (a.x < 0 || a.x > w) a.vx *= -1;
         if (a.y < 0 || a.y > h) a.vy *= -1;
-        for (var j = i + 1; j < nodes.length; j++) {
-          var b = nodes[j];
-          var dx = a.x - b.x, dy = a.y - b.y;
-          var dist = Math.sqrt(dx * dx + dy * dy);
+        near[i] = {};
+      }
+
+      var edges = [];
+      for (i = 0; i < n; i++) {
+        a = nodes[i];
+        for (j = i + 1; j < n; j++) {
+          b = nodes[j];
+          dx = a.x - b.x; dy = a.y - b.y;
+          dist = Math.sqrt(dx * dx + dy * dy);
           if (dist < maxDist) {
-            ctx.strokeStyle = "rgba(120,165,225," + (0.35 * (1 - dist / maxDist)).toFixed(3) + ")";
-            ctx.lineWidth = 1;
-            ctx.beginPath();
-            ctx.moveTo(a.x, a.y);
-            ctx.lineTo(b.x, b.y);
-            ctx.stroke();
+            near[i][j] = dist;
+            edges.push([i, j, dist]);
           }
         }
-        ctx.fillStyle = "rgba(160,190,220,0.75)";
-        ctx.fillRect(a.x - 1, a.y - 1, 2, 2);
       }
+
+      for (var e = 0; e < edges.length; e++) {
+        i = edges[e][0]; j = edges[e][1];
+        for (k = j + 1; k < n; k++) {
+          if (near[i][k] === undefined || near[j][k] === undefined) continue;
+          var closeness = 1 - (edges[e][2] + near[i][k] + near[j][k]) / (3 * maxDist);
+          a = nodes[i]; b = nodes[j]; c = nodes[k];
+          ctx.fillStyle = "rgba(90,140,210," + (0.09 * closeness).toFixed(3) + ")";
+          ctx.beginPath();
+          ctx.moveTo(a.x, a.y);
+          ctx.lineTo(b.x, b.y);
+          ctx.lineTo(c.x, c.y);
+          ctx.closePath();
+          ctx.fill();
+        }
+      }
+
+      ctx.lineWidth = 1;
+      for (e = 0; e < edges.length; e++) {
+        a = nodes[edges[e][0]]; b = nodes[edges[e][1]];
+        ctx.strokeStyle = "rgba(140,185,240," + (0.6 * (1 - edges[e][2] / maxDist)).toFixed(3) + ")";
+        ctx.beginPath();
+        ctx.moveTo(a.x, a.y);
+        ctx.lineTo(b.x, b.y);
+        ctx.stroke();
+      }
+
+      for (i = 0; i < n; i++) {
+        a = nodes[i];
+        var pulse = 0.5 + 0.5 * Math.sin(t * 1.6 + a.phase);
+        ctx.fillStyle = "rgba(170,205,245," + (0.25 * pulse).toFixed(3) + ")";
+        ctx.beginPath();
+        ctx.arc(a.x, a.y, 3 + pulse * 3, 0, Math.PI * 2);
+        ctx.fill();
+        ctx.fillStyle = "rgba(210,230,255,0.95)";
+        ctx.beginPath();
+        ctx.arc(a.x, a.y, 1.6, 0, Math.PI * 2);
+        ctx.fill();
+      }
+
       if (netRunning) netFrame = requestAnimationFrame(drawNet);
     };
 
