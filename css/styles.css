@@ -166,18 +166,12 @@ p { margin: 0 0 1.1em; }
 .btn--primary { background: var(--accent); color: #0b0f17; }
 .btn--primary:hover { background: #fff; box-shadow: 0 0 28px rgba(243, 111, 33, 0.6); }
 
-.btn--ghost { background: var(--steel); color: #fff; }
-.btn--ghost::before {
-  content: "";
-  position: absolute;
-  inset: 1px;
-  z-index: -1;
-  background: rgba(0, 10, 23, 0.85);
-  clip-path: var(--chamfer);
-  transition: background 0.25s;
+.btn--ghost {
+  background: #344b62;
+  color: #fff;
+  box-shadow: inset 0 0 0 1px rgba(104, 148, 180, 0.45);
 }
-.btn--ghost { z-index: 0; }
-.btn--ghost:hover::before { background: rgba(26, 74, 138, 0.75); }
+.btn--ghost:hover { background: #3f5a75; }
 
 .btn--sm { padding: 11px 18px; font-size: 0.72rem; }
 .btn--block { width: 100%; }
