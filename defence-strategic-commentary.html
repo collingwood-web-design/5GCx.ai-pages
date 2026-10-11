@@ -28,7 +28,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
 
-  <link rel="stylesheet" href="css/styles.css?v=20">
+  <link rel="stylesheet" href="css/styles.css?v=21">
 
   <script>
     document.documentElement.classList.add("js");
@@ -63,19 +63,20 @@
   </header>
 
   <main id="main">
-    <section class="page-head">
+    <section class="page-head page-head--image">
+      <picture class="page-head__media" aria-hidden="true">
+        <source media="(max-width: 700px)" srcset="https://media.cwd-cdn.com/5GCx.ai/images/commentary-hero-mobile.jpg">
+        <img src="https://media.cwd-cdn.com/5GCx.ai/images/commentary-hero.jpg" alt="" width="1717" height="916" fetchpriority="high">
+      </picture>
       <div class="container">
         <h1 class="page-head__title page-head__title--long" data-scramble>Defence &amp; Strategic Commentary</h1>
+        <h2 class="page-head__sub">Insights &amp; Perspective</h2>
+        <p class="page-head__lede">Analysis and commentary on AI Governance, Cognitive Warfare, Autonomous Systems, Military Transformation, and Next-Generation Training Environments.</p>
       </div>
     </section>
 
     <section class="section commentary">
       <div class="container">
-        <div class="commentary__intro reveal">
-          <h2 class="h2">Insights &amp; Perspective</h2>
-          <p class="lead">Analysis and commentary on AI Governance, Cognitive Warfare, Autonomous Systems, Military Transformation, and Next-Generation Training Environments.</p>
-        </div>
-
         <div class="posts">
 
           <article class="panel post reveal">
