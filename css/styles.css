@@ -738,13 +738,7 @@ p { margin: 0 0 1.1em; }
     linear-gradient(90deg, rgba(0, 10, 23, 0.8) 0%, rgba(0, 10, 23, 0.35) 55%, rgba(0, 10, 23, 0) 80%),
     linear-gradient(0deg, rgba(0, 10, 23, 0.6) 0%, transparent 40%);
 }
-.page-head__sub {
-  margin: 22px 0 14px;
-  font: 700 clamp(1rem, 2vw, 1.35rem) var(--font-display);
-  letter-spacing: 0.2em;
-  text-transform: uppercase;
-  color: #fff;
-}
+.page-head__sub { display: flex; margin: 28px 0 14px; }
 .page-head__lede {
   max-width: 560px;
   margin: 0;
