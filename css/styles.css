@@ -274,6 +274,14 @@ p { margin: 0 0 1.1em; }
   object-fit: cover;
   object-position: 50% 40%;
   filter: saturate(1.1) contrast(1.06);
+  transform-origin: 55% 45%;
+  animation: heroPush 24s ease-in-out infinite alternate;
+  will-change: transform;
+}
+
+@keyframes heroPush {
+  from { transform: scale(1); }
+  to { transform: scale(1.06); }
 }
 
 .hero__shade {
@@ -825,4 +833,5 @@ p { margin: 0 0 1.1em; }
     scroll-behavior: auto !important;
   }
   .boot { display: none; }
+  .hero__media img { animation: none; }
 }
