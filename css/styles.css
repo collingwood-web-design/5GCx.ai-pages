@@ -600,7 +600,6 @@ p { margin: 0 0 1.1em; }
   padding: calc(var(--header-h) + clamp(56px, 8vw, 96px)) 0 clamp(36px, 5vw, 56px);
   background: radial-gradient(ellipse 50% 90% at 10% 100%, rgba(11, 42, 92, 0.55), transparent 70%);
 }
-.page-head .eyebrow { margin-bottom: 18px; }
 .page-head__title {
   font-size: clamp(3rem, 8vw, 6rem);
   font-weight: 700;
