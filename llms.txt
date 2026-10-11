@@ -1,0 +1,79 @@
+# 5GCx.ai
+
+> 5GCx is an AI/ML driven defence-tech & dual-use platform poised to redefine 5th Gen fighter lead-in training. The innovation – Sensor Fusion Capacity™.
+
+AI Powered Cognitive Training Platform. Proudly Canadian, Globally Ready.
+
+Together, Angela Mondou (TECH CEO) and Billie Flynn are thrilled to announce the launch of 5GCx!
+
+In an era of unprecedented global security challenges, the demand for advanced military training capabilities has never been more critical.
+
+Technology and AI have broken the mould of conventional warfare at an alarming rate. The battlespace is now data-driven and demands that the human-machine interface be instantaneous.
+
+## The 5GCx Mission
+
+To accelerate the 5th Gen pilot’s operational readiness, successfully execute in a highly complex, data-driven battlespace, and ultimately train for lethality. 5GCx is a strategic fit with Canada’s F-35 procurement, NORAD and NATO interoperable technology that can be deployed across allied nations.
+
+Aligned with Canada’s defence policy and commitment to tech & data sovereignty, 5GCx supports the modernization of military capabilities and the resilience of critical infrastructure across the RCAF/CAF and allied operations.
+
+## Pages
+
+- [Home](https://5gcx.ai/): 5GCx, The 5GCx Mission and Contact
+- [Bios](https://5gcx.ai/bios): Angela Mondou, Billie Flynn and Brendan Crymble
+- [Defence & Strategic Commentary](https://5gcx.ai/defence-strategic-commentary): Insights & Perspective. Analysis and commentary on AI Governance, Cognitive Warfare, Autonomous Systems, Military Transformation, and Next-Generation Training Environments.
+- [Press](https://5gcx.ai/press): Press / Interviews / Links
+
+## Bios
+
+### Angela Mondou, ICD.D C.D. P. Log.
+
+President and CEO, 5GCx. Profile: https://5gcx.ai/bios#angela-mondou
+
+Angela Mondou is the CEO of 5GCx, a 5th Gen AI defence tech start-up company in the Aerospace sector. Angela has over 15+ years as a CEO, and has specialized in global technology leadership in AI, digital transformation, data interoperability and supply chain. Prior to the tech sector, she served as an officer in the Canadian Military and overseas with NATO command and UNPROFOR in Europe. Angela founded the Strategic Knowledge Exchange Forum, designed to deliver strategic dialogue between industry executives and government leaders on critical topics including the acceleration of AI Adoption, Cybersecurity and sharing threat intelligence, Arctic Sovereignty and National Security.
+
+### Billie Flynn CD, MBA, MSc
+
+5th Generation Fighter Aircraft Development, Aerospace, & Defence Strategies. Profile: https://5gcx.ai/bios#billie-flynn
+
+Billie Flynn is a retired RCAF Combat Commander, Fellow and Past President of the Society of Experimental Test Pilots, and former Senior F-35 Lightning II Experimental Test Pilot for Lockheed Martin. With over four decades of experience at the tactical and strategic levels in the Canadian Armed Forces, the US Air Force, and industry, Billie brings unmatched expertise in advanced aviation technologies, fifth-generation fighter aircraft, and global defence strategy. A seasoned global spokesperson, fluent in English and French, he is also a motivational speaker who translates lessons from high-risk test flying and combat leadership into insights for business and innovation.
+
+### Brendan Crymble
+
+Chief, Cx Training & Development Strategies. Profile: https://5gcx.ai/bios#brendan-crymble
+
+Boeing 777/787 Airbus 330 / 340 Check Pilot. Although a proud military veteran as a member of the illustrious Royal Canadian Dragoons, Brendan’s passion for flight led to a career that spans over three decades and more than 20,000 hours as a Check Pilot on commercial heavy-jets, flying and living around the world.
+
+## Defence & Strategic Commentary
+
+- [The battlespace has fundamentally changed](https://www.linkedin.com/posts/angela-mondou_first-usmc-mq-58-valkyrie-cca-drones-to-arrive-activity-7457405980872486912-n4wZ): Angela Mondou • LinkedIn
+- [AI is now a dominant force in multi‑domain battlespace](https://www.linkedin.com/posts/angela-mondou_from-platform-to-ecosystem-training-transformation-activity-7442987884938375169-WSQr): Angela Mondou • LinkedIn
+- [Breaking Down 5th Gen – and Cognitive Workload Issues](https://billieflynn.com/breaking-down-5th-gen-and-cognitive-workload-issues/): Billie Flynn • Blog • Feb 27, 2026
+- [Automation and Fighters: Canada’s Next Move](https://billieflynn.com/automation-and-fighters-canadas-next-move/): Billie Flynn • Blog • Jan 25, 2026
+- [Caesar Salad and Fighter Pilot Excellence](https://billieflynn.com/caesar-salad-and-fighter-pilot-excellence/): Billie Flynn • Blog • Dec 5, 2025
+- [Collaborative Combat Aircraft: All Speed and No Direction](https://billieflynn.com/collaborative-combat-aircraft-all-speed-and-no-direction/): Billie Flynn • Blog • Nov 18, 2025
+- [5GCx – Disrupting 5th Gen Training](https://billieflynn.com/5gcx-disrupting-5th-gen-training/): Billie Flynn • Blog • Sep 24, 2025
+- [Navigating 5th Generation Technologies: Insights from a Test Pilot The Future of Aviation: AI, Drones, and Human Factors](https://billieflynn.com/navigating-5th-generation-technologies-insights-from-a-test-pilot-the-future-of-aviation-ai-drones-and-human-factors/): Billie Flynn • Blog • Sep 24, 2025
+- [Optimizing the Human Weapons System](https://billieflynn.com/optimizing-the-human-weapons-system/): Billie Flynn • Blog • Nov 20, 2024
+- [Go Bold with Joetey Attariwala](https://billieflynn.com/go-bold-with-joetey-attariwala/): Billie Flynn • Blog • Jul 16, 2024
+- [Flying and the Perrier Bottle](https://billieflynn.com/flying-and-the-perrier-bottle/): Billie Flynn • Blog • Mar 19, 2024
+- [Optimizing Human Performance in Fighter Jets](https://billieflynn.com/optimizing-human-performance-in-fighter-jets/): Billie Flynn • Blog • Feb 10, 2023
+
+## Press
+
+- [SAAS NORTH PitchFest: AI Edition – 2026 Finalists](https://saasnorth.com/pitchfest-ai/): Angela Mondou • saasnorth.com • 2026
+- [Cutting to the Case Podcast](https://billieflynn.com/cutting-to-the-case-podcast/): Billie Flynn • billieflynn.com/blog • Sep. 8, 2026
+- [Future-Ready Training: Can Institutions Keep Up with AI, LVC, and Immersive Simulation?](https://www.defenceiq.com/events-military-flight-training/agenda/day-2): Billie Flynn • defenceiq.com – Military Flight Training 2026 • Apr. 1, 2026
+- [Angela Mondou at the Veterans Affairs Committee](https://openparliament.ca/committees/veterans-affairs/45-1/21/angela-mondou-2/only/): Angela Mondou • openparliament.ca • Feb. 9, 2026
+- [The Leadership Mindset Behind a Fighter Pilot’s Ritual](https://toolsoffighterpilots.substack.com/p/tofp-s01-e10-the-leadership-mindset): Billie Flynn, Tommaso Cartacci • Tools of Fighter Pilots podcast • Dec. 4, 2025
+- [The Human Factor: Optimizing Warfighter Performance](https://billieflynn.com/the-human-factor-optimizing-warfighter-performance/): Billie Flynn • billieflynn.com/blog • Aug. 4, 2025
+- [Canada Needs a Minister of AI and an AI Industrial Policy](https://www.cigionline.org/articles/canada-needs-a-minister-of-ai-and-an-ai-industrial-policy/): Angela Mondou, Paul Samson • theglobeandmail.com/cigionline.org • Jan. 25, 2024
+- [Aircrew Performance: Pennies on the Dollar](https://billieflynn.com/aircrew-performance-pennies-on-the-dollar/): Billie Flynn • billieflynn.com/blog • Jul. 13, 2023
+- [Optimizing Human Performance in Fighter Jets](https://billieflynn.com/optimizing-human-performance-in-fighter-jets/): Billie Flynn • billieflynn.com/blog • Feb. 10, 2023
+
+## Contact
+
+- Angela Mondou: amondou@5GCx.ai
+- Billie Flynn: bflynn@5GCx.ai
+- Brendan Crymble: bcrymble@5GCx.ai
+- LinkedIn: https://www.linkedin.com/company/5gcx-ai/
+- Billie Flynn – My Blog: https://billieflynn.com/
