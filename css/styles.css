@@ -310,6 +310,7 @@ p { margin: 0 0 1.1em; }
   text-transform: uppercase;
   color: var(--accent);
 }
+.eyebrow__rest { color: #fff; }
 
 .pulse {
   position: relative;
