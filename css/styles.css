@@ -800,13 +800,13 @@ p { margin: 0 0 1.1em; }
 }
 .footer__legal .sep { color: var(--accent); margin: 0 8px; }
 .footer__legal a {
-  color: var(--text);
+  color: inherit;
   text-decoration: underline;
   text-decoration-color: transparent;
   text-underline-offset: 4px;
   transition: color 0.2s, text-decoration-color 0.2s;
 }
-.footer__legal a:hover { color: #fff; text-decoration-color: rgba(104, 148, 180, 0.6); }
+.footer__legal a:hover { color: var(--text); text-decoration-color: rgba(104, 148, 180, 0.5); }
 
 /* ---------- Reveal ---------- */
 
