@@ -799,8 +799,14 @@ p { margin: 0 0 1.1em; }
   color: var(--muted);
 }
 .footer__legal .sep { color: var(--accent); margin: 0 8px; }
-.footer__legal a { color: var(--text); }
-.footer__legal a:hover { color: var(--accent); }
+.footer__legal a {
+  color: var(--text);
+  text-decoration: underline;
+  text-decoration-color: transparent;
+  text-underline-offset: 4px;
+  transition: color 0.2s, text-decoration-color 0.2s;
+}
+.footer__legal a:hover { color: #fff; text-decoration-color: rgba(104, 148, 180, 0.6); }
 
 /* ---------- Reveal ---------- */
 
