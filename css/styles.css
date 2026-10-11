@@ -354,7 +354,13 @@ p { margin: 0 0 1.1em; }
   text-transform: uppercase;
   color: #fff;
 }
-.hero__tag i { font-style: normal; color: var(--accent); margin: 0 0.5em; font-size: 0.7em; vertical-align: 0.15em; }
+.hero__leaf {
+  width: 1.2em;
+  height: 1.2em;
+  margin: 0 0.4em;
+  fill: #ee5524;
+  vertical-align: -0.22em;
+}
 
 .hero__lede {
   max-width: 560px;
