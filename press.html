@@ -28,7 +28,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
 
-  <link rel="stylesheet" href="css/styles.css?v=27">
+  <link rel="stylesheet" href="css/styles.css?v=28">
 
   <script>
     document.documentElement.classList.add("js");
@@ -191,7 +191,9 @@
         <div class="reveal">
           <h2 class="h2" data-scramble>CONTACT</h2>
           <p class="contact__brand">5GCx<span>.ai</span></p>
+        </div>
 
+        <div class="contact__info reveal">
           <ul class="comms">
             <li><a href="mailto:amondou@5GCx.ai"><span class="comms__name">Angela Mondou</span><span class="comms__email">amondou@5GCx.ai</span></a></li>
             <li><a href="mailto:bflynn@5GCx.ai"><span class="comms__name">Billie Flynn</span><span class="comms__email">bflynn@5GCx.ai</span></a></li>
@@ -204,43 +206,6 @@
             <a class="links__li" href="https://www.linkedin.com/company/5gcx-ai/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><rect width="24" height="24" rx="4" fill="#1a4a8a"/><path fill="#fff" d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13zM7.12 20.45H3.56V9h3.56v11.45z"/></svg>Follow on LinkedIn <span aria-hidden="true">&#8599;</span></a>
           </div>
         </div>
-
-        <form id="contact-form" class="panel form reveal">
-          <div class="panel__head">
-            <span><i class="blink"></i>Contact Us</span>
-          </div>
-          <div class="form__row">
-            <label>
-              <span>First Name</span>
-              <input name="First Name" autocomplete="given-name" required>
-            </label>
-            <label>
-              <span>Last Name</span>
-              <input name="Last Name" autocomplete="family-name" required>
-            </label>
-          </div>
-          <label>
-            <span>Email</span>
-            <input name="Email" type="email" autocomplete="email" required>
-          </label>
-          <label>
-            <span>Message</span>
-            <textarea name="Message" rows="5" required></textarea>
-          </label>
-
-          <input
-            type="text"
-            name="website"
-            data-cwd-honeypot
-            tabindex="-1"
-            autocomplete="off"
-            style="position:absolute;left:-9999px;opacity:0;height:0;width:0"
-            aria-hidden="true"
-          >
-
-          <button class="btn btn--primary btn--block" type="submit">Submit</button>
-          <p class="form__status" data-cwd-contact-status role="status" aria-live="polite"></p>
-        </form>
       </div>
     </section>
   </main>
@@ -261,6 +226,5 @@
   </footer>
 
   <script src="js/main.js?v=2" defer></script>
-  <script src="https://web-production-54a6d.up.railway.app/static/cwd-contact.js"></script>
 </body>
 </html>

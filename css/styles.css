@@ -962,7 +962,8 @@ p { margin: 0 0 1.1em; }
     radial-gradient(ellipse 50% 60% at 85% 40%, rgba(26, 74, 138, 0.35), transparent 70%),
     linear-gradient(180deg, var(--bg), var(--bg-2));
 }
-.contact .grid-2 { align-items: start; }
+.contact .grid-2 { align-items: center; }
+.contact__info .comms { margin-top: 0; }
 
 .contact__brand {
   margin: 0;
