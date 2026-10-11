@@ -227,7 +227,7 @@
           var dx = a.x - b.x, dy = a.y - b.y;
           var dist = Math.sqrt(dx * dx + dy * dy);
           if (dist < maxDist) {
-            ctx.strokeStyle = "rgba(255,110,0," + (0.22 * (1 - dist / maxDist)).toFixed(3) + ")";
+            ctx.strokeStyle = "rgba(104,148,180," + (0.3 * (1 - dist / maxDist)).toFixed(3) + ")";
             ctx.lineWidth = 1;
             ctx.beginPath();
             ctx.moveTo(a.x, a.y);
@@ -235,7 +235,7 @@
             ctx.stroke();
           }
         }
-        ctx.fillStyle = "rgba(255,110,0,0.7)";
+        ctx.fillStyle = "rgba(160,190,220,0.75)";
         ctx.fillRect(a.x - 1, a.y - 1, 2, 2);
       }
       if (netRunning) netFrame = requestAnimationFrame(drawNet);
@@ -254,7 +254,7 @@
   var radar = document.getElementById("radar");
   if (radar) {
     var rState, rRunning = false, rFrame, lastSweep = 0;
-    var SENSOR_COLORS = { R: "255,255,255", E: "255,210,159", D: "255,129,84" };
+    var SENSOR_COLORS = { R: "255,255,255", E: "255,210,159", D: "104,148,180" };
     var SWEEP_SPEED = 1.1;
     var TAU = Math.PI * 2;
 
@@ -291,14 +291,14 @@
       ctx.clearRect(0, 0, w, h);
 
       var bg = ctx.createRadialGradient(cx, cy, 0, cx, cy, R);
-      bg.addColorStop(0, "rgba(255,110,0,0.07)");
-      bg.addColorStop(1, "rgba(255,110,0,0.01)");
+      bg.addColorStop(0, "rgba(63,67,126,0.35)");
+      bg.addColorStop(1, "rgba(30,9,85,0.12)");
       ctx.fillStyle = bg;
       ctx.beginPath();
       ctx.arc(cx, cy, R, 0, TAU);
       ctx.fill();
 
-      ctx.strokeStyle = "rgba(255,110,0,0.22)";
+      ctx.strokeStyle = "rgba(104,148,180,0.3)";
       ctx.lineWidth = 1;
       for (var ring = 1; ring <= 4; ring++) {
         ctx.beginPath();
@@ -310,7 +310,7 @@
       ctx.moveTo(cx, cy - R); ctx.lineTo(cx, cy + R);
       ctx.stroke();
 
-      ctx.strokeStyle = "rgba(255,110,0,0.45)";
+      ctx.strokeStyle = "rgba(104,148,180,0.55)";
       for (var d = 0; d < 72; d++) {
         var ang = (d / 72) * TAU;
         var len = d % 6 === 0 ? 10 : 4;
@@ -392,7 +392,7 @@
         }
       });
 
-      ctx.fillStyle = "rgba(255,110,0,0.9)";
+      ctx.fillStyle = "rgba(255,255,255,0.9)";
       ctx.beginPath();
       ctx.moveTo(cx, cy - 7);
       ctx.lineTo(cx + 5, cy + 5);
