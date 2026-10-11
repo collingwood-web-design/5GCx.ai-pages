@@ -946,6 +946,7 @@ p { margin: 0 0 1.1em; }
   text-transform: uppercase;
   color: var(--muted);
 }
+.form label:has([required]) > span::after { content: " *"; color: var(--accent); }
 .form__row { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
 .form input,
 .form textarea {
