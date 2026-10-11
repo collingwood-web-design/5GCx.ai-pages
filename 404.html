@@ -4,9 +4,12 @@
   <meta charset="utf-8">
   <script>
     (function () {
-      var base = document.createElement("base");
+      var host = location.hostname;
       var first = location.pathname.split("/")[1];
-      base.href = /\.github\.io$/.test(location.hostname) && first ? "/" + first + "/" : "/";
+      var href = /\.github\.io$/.test(host) && first ? "/" + first + "/" : /(^|\.)5gcx\.ai$/i.test(host) ? "/" : null;
+      if (!href) return;
+      var base = document.createElement("base");
+      base.href = href;
       document.head.appendChild(base);
     })();
   </script>
