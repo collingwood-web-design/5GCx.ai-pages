@@ -149,7 +149,7 @@
   /* ---------- Canvas helpers ---------- */
 
   function fitCanvas(canvas) {
-    var dpr = Math.min(window.devicePixelRatio || 1, 2);
+    var dpr = Math.min(window.devicePixelRatio || 1, 3);
     var rect = canvas.getBoundingClientRect();
     canvas.width = Math.round(rect.width * dpr);
     canvas.height = Math.round(rect.height * dpr);
@@ -297,7 +297,10 @@
       };
     });
 
-    var setupRadar = function () { rState = fitCanvas(radar); };
+    var setupRadar = function () {
+      rState = fitCanvas(radar);
+      if (reduceMotion) requestAnimationFrame(drawRadar);
+    };
 
     var drawRadar = function (now) {
       var t = now / 1000;
@@ -339,16 +342,29 @@
         ctx.stroke();
       }
 
-      var trail = 0.9, steps = 36;
-      for (var s = 0; s < steps; s++) {
-        var a0 = sweep - (s / steps) * trail;
-        var a1 = sweep - ((s + 1) / steps) * trail;
-        ctx.fillStyle = "rgba(243,111,33," + (0.22 * (1 - s / steps)).toFixed(3) + ")";
+      var trail = 0.9;
+      if (ctx.createConicGradient) {
+        var cone = ctx.createConicGradient(sweep - trail, cx, cy);
+        cone.addColorStop(0, "rgba(243,111,33,0)");
+        cone.addColorStop(trail / TAU, "rgba(243,111,33,0.22)");
+        cone.addColorStop(Math.min(1, trail / TAU + 0.001), "rgba(243,111,33,0)");
+        ctx.fillStyle = cone;
         ctx.beginPath();
         ctx.moveTo(cx, cy);
-        ctx.arc(cx, cy, R, a1, a0);
+        ctx.arc(cx, cy, R, sweep - trail, sweep);
         ctx.closePath();
         ctx.fill();
+      } else {
+        for (var s = 0, steps = 36; s < steps; s++) {
+          var a0 = sweep - (s / steps) * trail;
+          var a1 = sweep - ((s + 1) / steps) * trail;
+          ctx.fillStyle = "rgba(243,111,33," + (0.22 * (1 - s / steps)).toFixed(3) + ")";
+          ctx.beginPath();
+          ctx.moveTo(cx, cy);
+          ctx.arc(cx, cy, R, a1, a0);
+          ctx.closePath();
+          ctx.fill();
+        }
       }
       ctx.strokeStyle = "rgba(243,111,33,0.95)";
       ctx.lineWidth = 1.5;
@@ -425,6 +441,7 @@
 
     setupRadar();
     window.addEventListener("resize", setupRadar);
+    if ("ResizeObserver" in window) new ResizeObserver(setupRadar).observe(radar);
     whenVisible(radar, function (visible) {
       if (visible && !rRunning) {
         rRunning = true;

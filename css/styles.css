@@ -99,7 +99,7 @@ p { margin: 0 0 1.1em; }
 .fx-scan {
   position: fixed;
   inset: 0;
-  z-index: 150;
+  z-index: 90;
   pointer-events: none;
   background: repeating-linear-gradient(0deg, rgba(255, 255, 255, 0.018) 0 1px, transparent 1px 3px);
 }
@@ -570,6 +570,7 @@ p { margin: 0 0 1.1em; }
 }
 @keyframes blink { to { visibility: hidden; } }
 
+.radar-panel { z-index: 95; }
 .radar { display: block; width: 100%; aspect-ratio: 1; }
 
 /* ---------- Mission ---------- */
