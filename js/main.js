@@ -144,35 +144,7 @@
     }, 180);
   }
 
-  /* ---------- Target lock on the jet ---------- */
-
   var hero = document.getElementById("hero");
-  var heroImg = document.getElementById("hero-img");
-  var lock = document.getElementById("lock");
-  var mobileQuery = window.matchMedia("(max-width: 767px)");
-
-  function placeLock() {
-    if (!hero || !heroImg || !lock || !heroImg.naturalWidth) return;
-    var target = mobileQuery.matches ? [0.576, 0.405] : [0.547, 0.4];
-    var iw = heroImg.naturalWidth;
-    var ih = heroImg.naturalHeight;
-    var w = hero.clientWidth;
-    var h = hero.clientHeight;
-    var hud = lock.offsetParent.getBoundingClientRect();
-    var heroRect = hero.getBoundingClientRect();
-    var scale = Math.max(w / iw, h / ih);
-    var ox = (w - iw * scale) * 0.5;
-    var oy = (h - ih * scale) * 0.4;
-    lock.style.left = (ox + target[0] * iw * scale - (hud.left - heroRect.left)) + "px";
-    lock.style.top = (oy + target[1] * ih * scale - (hud.top - heroRect.top)) + "px";
-    lock.classList.add("is-on");
-  }
-
-  if (heroImg) {
-    if (heroImg.complete) placeLock();
-    heroImg.addEventListener("load", placeLock);
-    window.addEventListener("resize", placeLock);
-  }
 
   /* ---------- Canvas helpers ---------- */
 
@@ -227,7 +199,7 @@
           var dx = a.x - b.x, dy = a.y - b.y;
           var dist = Math.sqrt(dx * dx + dy * dy);
           if (dist < maxDist) {
-            ctx.strokeStyle = "rgba(140,150,235," + (0.35 * (1 - dist / maxDist)).toFixed(3) + ")";
+            ctx.strokeStyle = "rgba(120,165,225," + (0.35 * (1 - dist / maxDist)).toFixed(3) + ")";
             ctx.lineWidth = 1;
             ctx.beginPath();
             ctx.moveTo(a.x, a.y);
@@ -291,8 +263,8 @@
       ctx.clearRect(0, 0, w, h);
 
       var bg = ctx.createRadialGradient(cx, cy, 0, cx, cy, R);
-      bg.addColorStop(0, "rgba(63,67,126,0.35)");
-      bg.addColorStop(1, "rgba(30,9,85,0.12)");
+      bg.addColorStop(0, "rgba(26,74,138,0.4)");
+      bg.addColorStop(1, "rgba(63,67,126,0.12)");
       ctx.fillStyle = bg;
       ctx.beginPath();
       ctx.arc(cx, cy, R, 0, TAU);
