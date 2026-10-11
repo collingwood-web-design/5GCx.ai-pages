@@ -385,29 +385,6 @@ p { margin: 0 0 1.1em; }
 
 .hero__cta { display: flex; flex-wrap: wrap; gap: 14px; margin-top: 30px; }
 
-.scroll-cue {
-  position: absolute;
-  left: 50%;
-  bottom: 26px;
-  z-index: 2;
-  width: 24px; height: 40px;
-  margin-left: -12px;
-  border: 1px solid var(--line-strong);
-  border-radius: 12px;
-}
-.scroll-cue span {
-  position: absolute;
-  left: 50%; top: 8px;
-  width: 2px; height: 8px;
-  margin-left: -1px;
-  background: var(--accent);
-  animation: cue 1.8s ease-in-out infinite;
-}
-@keyframes cue {
-  0% { transform: translateY(0); opacity: 1; }
-  80%, 100% { transform: translateY(14px); opacity: 0; }
-}
-
 /* ---------- HUD ---------- */
 
 .hud {
