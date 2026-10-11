@@ -296,14 +296,14 @@
       for (var s = 0; s < steps; s++) {
         var a0 = sweep - (s / steps) * trail;
         var a1 = sweep - ((s + 1) / steps) * trail;
-        ctx.fillStyle = "rgba(255,110,0," + (0.22 * (1 - s / steps)).toFixed(3) + ")";
+        ctx.fillStyle = "rgba(243,111,33," + (0.22 * (1 - s / steps)).toFixed(3) + ")";
         ctx.beginPath();
         ctx.moveTo(cx, cy);
         ctx.arc(cx, cy, R, a1, a0);
         ctx.closePath();
         ctx.fill();
       }
-      ctx.strokeStyle = "rgba(255,110,0,0.95)";
+      ctx.strokeStyle = "rgba(243,111,33,0.95)";
       ctx.lineWidth = 1.5;
       ctx.beginPath();
       ctx.moveTo(cx, cy);
@@ -355,9 +355,9 @@
           ctx.save();
           ctx.translate(px, py);
           ctx.rotate(Math.PI / 4);
-          ctx.strokeStyle = "rgba(255,110,0," + alpha.toFixed(3) + ")";
+          ctx.strokeStyle = "rgba(243,111,33," + alpha.toFixed(3) + ")";
           ctx.lineWidth = 1.5;
-          ctx.shadowColor = "rgba(255,110,0,0.9)";
+          ctx.shadowColor = "rgba(243,111,33,0.9)";
           ctx.shadowBlur = 8;
           ctx.strokeRect(-6, -6, 12, 12);
           ctx.restore();

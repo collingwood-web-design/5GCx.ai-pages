@@ -4,9 +4,9 @@
   --panel: rgba(11, 42, 92, 0.4);
   --line: rgba(104, 148, 180, 0.16);
   --line-strong: rgba(104, 148, 180, 0.55);
-  --accent: #ff6e00;
-  --accent-soft: rgba(255, 110, 0, 0.12);
-  --accent-2: #ff8154;
+  --accent: #f36f21;
+  --accent-soft: rgba(243, 111, 33, 0.12);
+  --accent-2: #f36f21;
   --accent-3: #ffd29f;
   --purple: #1e0955;
   --indigo: #3f437e;
@@ -164,7 +164,7 @@ p { margin: 0 0 1.1em; }
 .btn:hover { transform: translateY(-2px); }
 
 .btn--primary { background: var(--accent); color: #0b0f17; }
-.btn--primary:hover { background: #fff; box-shadow: 0 0 28px rgba(255, 110, 0, 0.6); }
+.btn--primary:hover { background: #fff; box-shadow: 0 0 28px rgba(243, 111, 33, 0.6); }
 
 .btn--ghost { background: var(--steel); color: #fff; }
 .btn--ghost::before {
@@ -209,7 +209,7 @@ p { margin: 0 0 1.1em; }
 
 .logo { display: inline-flex; align-items: baseline; color: #fff; }
 .logo__mark { font: 800 1.6rem/1 var(--font-display); letter-spacing: -0.01em; }
-.logo__mark span { color: var(--accent); text-transform: lowercase; text-shadow: 0 0 14px rgba(255, 110, 0, 0.7); }
+.logo__mark span { color: var(--accent); text-transform: lowercase; text-shadow: 0 0 14px rgba(243, 111, 33, 0.7); }
 .logo__ai { font: 500 0.85rem var(--font-mono); color: var(--muted); margin-left: 2px; }
 
 .nav { display: flex; align-items: center; gap: 30px; }
@@ -345,14 +345,14 @@ p { margin: 0 0 1.1em; }
   font-weight: 700;
   line-height: 0.9;
   letter-spacing: -0.03em;
-  text-shadow: 0 0 40px rgba(255, 110, 0, 0.25);
+  text-shadow: 0 0 40px rgba(243, 111, 33, 0.25);
 }
 .hero__title [data-scramble] { display: inline-block; }
 .hero__ai {
   font-size: 0.42em;
   color: var(--accent);
   margin-left: 0.06em;
-  text-shadow: 0 0 24px rgba(255, 110, 0, 0.8);
+  text-shadow: 0 0 24px rgba(243, 111, 33, 0.8);
 }
 
 .hero__tag {
@@ -535,7 +535,7 @@ p { margin: 0 0 1.1em; }
 
 .hl {
   color: var(--accent);
-  text-shadow: 0 0 18px rgba(255, 110, 0, 0.5);
+  text-shadow: 0 0 18px rgba(243, 111, 33, 0.5);
 }
 
 .grid-2 {
@@ -633,7 +633,7 @@ p { margin: 0 0 1.1em; }
 .mission__statement em {
   font-style: normal;
   color: var(--accent-2);
-  text-shadow: 0 0 24px rgba(255, 129, 84, 0.55);
+  text-shadow: 0 0 24px rgba(243, 111, 33, 0.5);
 }
 
 /* ---------- Contact ---------- */
@@ -651,7 +651,7 @@ p { margin: 0 0 1.1em; }
   font: 700 clamp(2.4rem, 5vw, 3.6rem)/1 var(--font-display);
   color: #fff;
 }
-.contact__brand span { color: var(--accent); font-size: 0.5em; text-shadow: 0 0 18px rgba(255, 110, 0, 0.7); }
+.contact__brand span { color: var(--accent); font-size: 0.5em; text-shadow: 0 0 18px rgba(243, 111, 33, 0.7); }
 
 .links-label {
   margin: 0 0 10px;
@@ -712,7 +712,7 @@ p { margin: 0 0 1.1em; }
 .form textarea:focus {
   outline: none;
   border-color: var(--accent);
-  box-shadow: 0 0 0 3px rgba(255, 110, 0, 0.15), 0 0 18px rgba(255, 110, 0, 0.15);
+  box-shadow: 0 0 0 3px rgba(243, 111, 33, 0.15), 0 0 18px rgba(243, 111, 33, 0.15);
 }
 .form .btn { margin-top: 6px; }
 
