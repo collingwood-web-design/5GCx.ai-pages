@@ -593,32 +593,16 @@ p { margin: 0 0 1.1em; }
   color: var(--accent-2);
 }
 
-/* ---------- Page hero (inner pages) ---------- */
+/* ---------- Page head (inner pages) ---------- */
 
-.page-hero {
-  position: relative;
-  min-height: clamp(360px, 52vh, 520px);
-  display: flex;
-  align-items: flex-end;
-  padding: calc(var(--header-h) + 60px) 0 clamp(48px, 7vh, 80px);
-  overflow: hidden;
-  isolation: isolate;
+.page-head {
+  padding: calc(var(--header-h) + clamp(56px, 8vw, 96px)) 0 clamp(36px, 5vw, 56px);
+  border-bottom: 1px solid var(--line);
+  background: radial-gradient(ellipse 50% 90% at 10% 100%, rgba(11, 42, 92, 0.55), transparent 70%);
 }
-.page-hero__media img {
-  position: absolute;
-  inset: 0;
-  z-index: -3;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: 50% 35%;
-  opacity: 0.55;
-  -webkit-mask-image: linear-gradient(180deg, #000 55%, transparent 100%);
-  mask-image: linear-gradient(180deg, #000 55%, transparent 100%);
-}
-.page-hero .eyebrow { margin-bottom: 18px; }
-.page-hero__title {
-  font-size: clamp(3.2rem, 9vw, 7rem);
+.page-head .eyebrow { margin-bottom: 18px; }
+.page-head__title {
+  font-size: clamp(3rem, 8vw, 6rem);
   font-weight: 700;
   line-height: 0.95;
   letter-spacing: -0.03em;
@@ -661,16 +645,6 @@ p { margin: 0 0 1.1em; }
 }
 .bio__photo::before { top: -5px; left: -5px; border-top-width: 2px; border-left-width: 2px; }
 .bio__photo::after { right: -5px; bottom: -5px; border-bottom-width: 2px; border-right-width: 2px; }
-.bio__photo figcaption {
-  position: absolute;
-  top: 100%;
-  left: 0;
-  margin-top: 12px;
-  font: 400 0.66rem var(--font-mono);
-  letter-spacing: 0.08em;
-  color: var(--muted);
-}
-
 .bio__name {
   margin: 0 0 12px;
   font: 700 clamp(1.9rem, 3.4vw, 2.8rem)/1.1 var(--font-display);
@@ -730,6 +704,7 @@ p { margin: 0 0 1.1em; }
 }
 .bio__follow svg { width: 18px; height: 18px; flex: none; }
 .bio__follow:hover { color: #fff; border-color: #fff; }
+.bio__links { display: flex; flex-wrap: wrap; align-items: center; gap: 0 28px; }
 
 /* ---------- Explore ---------- */
 
