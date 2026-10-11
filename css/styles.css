@@ -343,7 +343,7 @@ p { margin: 0 0 1.1em; }
   font-size: 0.42em;
   color: var(--accent);
   margin-left: 0.06em;
-  text-shadow: 0 0 24px rgba(243, 111, 33, 0.8);
+  text-shadow: none;
 }
 
 .hero__tag {
@@ -642,7 +642,7 @@ p { margin: 0 0 1.1em; }
   font: 700 clamp(2.4rem, 5vw, 3.6rem)/1 var(--font-display);
   color: #fff;
 }
-.contact__brand span { color: var(--accent); font-size: 0.5em; text-shadow: 0 0 18px rgba(243, 111, 33, 0.7); }
+.contact__brand span { color: var(--accent); font-size: 0.5em; }
 
 .links-label {
   margin: 0 0 10px;
