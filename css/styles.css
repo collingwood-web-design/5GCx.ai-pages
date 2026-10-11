@@ -596,8 +596,8 @@ p { margin: 0 0 1.1em; }
 /* ---------- Page head (inner pages) ---------- */
 
 .page-head {
+  position: relative;
   padding: calc(var(--header-h) + clamp(56px, 8vw, 96px)) 0 clamp(36px, 5vw, 56px);
-  border-bottom: 1px solid var(--line);
   background: radial-gradient(ellipse 50% 90% at 10% 100%, rgba(11, 42, 92, 0.55), transparent 70%);
 }
 .page-head .eyebrow { margin-bottom: 18px; }
@@ -709,8 +709,8 @@ p { margin: 0 0 1.1em; }
 /* ---------- Explore ---------- */
 
 .explore {
+  position: relative;
   padding: clamp(64px, 8vw, 110px) 0;
-  border-top: 1px solid var(--line);
   background:
     radial-gradient(ellipse 50% 70% at 15% 30%, rgba(26, 74, 138, 0.3), transparent 70%),
     var(--bg);
@@ -767,7 +767,6 @@ p { margin: 0 0 1.1em; }
 /* ---------- Contact ---------- */
 
 .contact {
-  border-top: 1px solid var(--line);
   background:
     radial-gradient(ellipse 50% 60% at 85% 40%, rgba(26, 74, 138, 0.35), transparent 70%),
     linear-gradient(180deg, var(--bg), var(--bg-2));
@@ -866,12 +865,38 @@ p { margin: 0 0 1.1em; }
 .form[data-state="success"] .form__status { color: var(--accent); }
 .form[data-state="error"] .form__status { color: var(--red); }
 
+/* ---------- Section bar ---------- */
+
+.explore::before,
+.contact::before,
+.site-footer::before,
+.page-head::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background:
+    linear-gradient(90deg, transparent, rgba(190, 215, 240, 0.7), transparent) -40% 0 / 22% 100% no-repeat,
+    linear-gradient(90deg, var(--royal), var(--steel) 45%, var(--indigo) 80%, var(--purple));
+  animation: barSweep 9s linear infinite;
+  pointer-events: none;
+}
+.explore::before,
+.contact::before,
+.site-footer::before { top: 0; }
+.page-head::after { bottom: 0; }
+
+@keyframes barSweep {
+  0% { background-position: -40% 0, 0 0; }
+  55%, 100% { background-position: 140% 0, 0 0; }
+}
+
 /* ---------- Footer ---------- */
 
 .site-footer {
-  padding: 48px 0 40px;
-  border-top: 4px solid var(--royal);
-  border-image: linear-gradient(90deg, var(--royal), var(--steel) 45%, var(--indigo) 80%, var(--purple)) 1;
+  position: relative;
+  padding: 52px 0 40px;
   background: var(--bg-2);
 }
 .footer__inner {
@@ -979,4 +1004,8 @@ p { margin: 0 0 1.1em; }
   }
   .boot { display: none; }
   .hero__media img { animation: none; }
+  .explore::before,
+  .contact::before,
+  .site-footer::before,
+  .page-head::after { animation: none; background-position: -40% 0, 0 0; }
 }
