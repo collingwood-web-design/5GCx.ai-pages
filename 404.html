@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en-CA">
+<head>
+  <meta charset="utf-8">
+  <script>
+    (function () {
+      var base = document.createElement("base");
+      var first = location.pathname.split("/")[1];
+      base.href = /\.github\.io$/.test(location.hostname) && first ? "/" + first + "/" : "/";
+      document.head.appendChild(base);
+    })();
+  </script>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Page Not Found | 5GCx.ai</title>
+  <meta name="robots" content="noindex">
+  <meta name="theme-color" content="#03060c">
+
+  <link rel="icon" href="https://media.cwd-cdn.com/5GCx.ai/images/favicon-32.png" sizes="32x32">
+  <link rel="icon" href="https://media.cwd-cdn.com/5GCx.ai/images/favicon-192.png" sizes="192x192">
+  <link rel="apple-touch-icon" href="https://media.cwd-cdn.com/5GCx.ai/images/favicon-180.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/styles.css?v=27">
+
+  <script>document.documentElement.classList.add("js");</script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <div class="fx-grid" aria-hidden="true"></div>
+  <div class="fx-scan" aria-hidden="true"></div>
+
+  <header class="site-header" id="site-header">
+    <div class="container header__inner">
+      <a class="logo" href="./" aria-label="5GCx.ai home">
+        <span class="logo__mark">5GC<span>x</span></span><span class="logo__ai">.ai</span>
+      </a>
+      <nav class="nav" id="site-nav" aria-label="Main">
+        <a href="./">Home</a>
+        <a href="bios">Bios</a>
+        <a href="defence-strategic-commentary">Defence &amp; Strategic Commentary</a>
+        <a href="press">Press</a>
+        <a class="btn btn--primary btn--sm" href="./#contact">Contact Us</a>
+      </nav>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+        <span></span><span></span>
+        <span class="sr-only">Menu</span>
+      </button>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="page-head page-head--404">
+      <div class="container">
+        <h1 class="page-head__title" data-scramble>404</h1>
+        <p class="eyebrow page-head__sub"><span class="pulse"></span><span>Page <span class="eyebrow__rest">Not Found</span></span></p>
+        <a class="btn btn--primary" href="./">Home</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer__inner">
+      <a class="logo" href="./" aria-label="5GCx.ai home">
+        <span class="logo__mark">5GC<span>x</span></span><span class="logo__ai">.ai</span>
+      </a>
+      <nav class="footer__nav" aria-label="Footer">
+        <a href="./">Home</a>
+        <a href="bios">Bios</a>
+        <a href="defence-strategic-commentary">Defence &amp; Strategic Commentary</a>
+        <a href="press">Press</a>
+      </nav>
+      <p class="footer__legal">Copyright &copy; <span id="year">2026</span> | 5GCx <span class="sep">//</span> Design &amp; Develop: <a href="https://www.collingwoodwebdesign.com/" target="_blank" rel="noopener">Collingwood Web Design</a></p>
+    </div>
+  </footer>
+
+  <script src="js/main.js?v=2" defer></script>
+</body>
+</html>

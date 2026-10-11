@@ -707,6 +707,13 @@ p { margin: 0 0 1.1em; }
 
 /* ---------- Commentary ---------- */
 
+.page-head--404 {
+  display: flex;
+  align-items: center;
+  min-height: calc(100vh - 220px);
+}
+.page-head--404 .btn { margin-top: 18px; }
+
 .page-head__title--long { max-width: 14ch; font-size: clamp(2.6rem, 6vw, 5rem); line-height: 1; }
 
 .page-head--image {
