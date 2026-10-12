@@ -1258,7 +1258,10 @@ p { margin: 0 0 1.1em; }
   .form__row { grid-template-columns: 1fr; gap: 0; }
   .footer__inner { grid-template-columns: 1fr; }
   .footer__nav { justify-content: flex-start; }
-  .hero__cta .btn { flex: 1 1 100%; }
+  .hero { padding-bottom: 44px; }
+  .hero__cta { flex-wrap: nowrap; gap: 12px; }
+  .hero__cta .btn { flex: 1 1 0; padding-inline: 12px; }
+  .hero__cta-long { display: none; }
 }
 
 @media (prefers-reduced-motion: reduce) {
