@@ -460,4 +460,28 @@
     form.addEventListener("cwd-contact:error", function () { form.dataset.state = "error"; });
     form.addEventListener("submit", function () { form.dataset.state = "sending"; });
   }
+
+  /* ---------- Cookie notice ---------- */
+
+  var COOKIE_KEY = "5gcx-cookie-consent";
+  var consented = false;
+  try { consented = !!localStorage.getItem(COOKIE_KEY); } catch (e) {}
+  if (!consented) {
+    var banner = document.createElement("div");
+    banner.className = "cookie-banner";
+    banner.setAttribute("role", "dialog");
+    banner.setAttribute("aria-label", "Cookie notice");
+    banner.innerHTML =
+      '<p>We use cookies to keep the site running smoothly. See our <a href="privacy">Privacy Policy</a> for details.</p>' +
+      '<button type="button" class="btn btn--primary btn--sm cookie-banner__accept">Got it</button>';
+    document.body.appendChild(banner);
+    requestAnimationFrame(function () {
+      requestAnimationFrame(function () { banner.classList.add("is-visible"); });
+    });
+    banner.querySelector(".cookie-banner__accept").addEventListener("click", function () {
+      try { localStorage.setItem(COOKIE_KEY, "1"); } catch (e) {}
+      banner.classList.remove("is-visible");
+      setTimeout(function () { banner.remove(); }, 400);
+    });
+  }
 })();

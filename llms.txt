@@ -22,6 +22,7 @@ Aligned with Canada’s defence policy and commitment to tech & data sovereignty
 - [Bios](https://5gcx.ai/bios): Angela Mondou, Billie Flynn and Brendan Crymble
 - [Defence & Strategic Commentary](https://5gcx.ai/defence-strategic-commentary): Insights & Perspective. Analysis and commentary on AI Governance, Cognitive Warfare, Autonomous Systems, Military Transformation, and Next-Generation Training Environments.
 - [Press](https://5gcx.ai/press): Press / Interviews / Links
+- [Privacy Policy](https://5gcx.ai/privacy): How 5GCx handles information on this website
 
 ## Bios
 
