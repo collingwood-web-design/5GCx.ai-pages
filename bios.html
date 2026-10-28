@@ -8,6 +8,9 @@
   <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
   <meta name="author" content="5GCx">
   <link rel="canonical" href="https://5gcx.ai/bios">
+  <link rel="alternate" type="text/plain" title="llms.txt" href="https://5gcx.ai/llms.txt">
+  <link rel="alternate" hreflang="en-CA" href="https://5gcx.ai/bios">
+  <link rel="alternate" hreflang="x-default" href="https://5gcx.ai/bios">
   <meta name="theme-color" content="#03060c">
 
   <meta property="og:type" content="website">
@@ -52,8 +55,9 @@
         "@type": "Organization",
         "@id": "https://5gcx.ai/#organization",
         "name": "5GCx",
-        "alternateName": "5GCx.ai",
+        "alternateName": ["5GCx.ai", "5GCx AI Powered Cognitive Training Platform"],
         "url": "https://5gcx.ai/",
+        "email": "amondou@5gcx.ai",
         "logo": {
           "@type": "ImageObject",
           "@id": "https://5gcx.ai/#logo",
@@ -65,36 +69,83 @@
         "image": "https://media.cwd-cdn.com/5GCx.ai/images/og/og-home.jpg",
         "description": "5GCx is an AI/ML driven defence-tech & dual-use platform poised to redefine 5th Gen fighter lead-in training. The innovation – Sensor Fusion Capacity™. In an era of unprecedented global security challenges, the demand for advanced military training capabilities has never been more critical.",
         "slogan": "Proudly Canadian, Globally Ready",
+        "foundingLocation": {
+          "@type": "Country",
+          "name": "Canada"
+        },
         "address": {
           "@type": "PostalAddress",
           "addressCountry": "CA"
         },
-        "areaServed": {
-          "@type": "Country",
-          "name": "Canada"
-        },
+        "areaServed": [
+          {
+            "@type": "Country",
+            "name": "Canada"
+          },
+          {
+            "@type": "AdministrativeArea",
+            "name": "allied nations"
+          },
+          {
+            "@type": "AdministrativeArea",
+            "name": "NORAD"
+          },
+          {
+            "@type": "AdministrativeArea",
+            "name": "NATO"
+          }
+        ],
         "knowsAbout": [
           "Artificial intelligence",
           "Machine learning",
           "5th Gen fighter lead-in training",
           "Sensor Fusion Capacity",
+          "AI Powered Cognitive Training Platform",
           "Cognitive training",
+          "Cognitive workload",
+          "Cognitive Warfare",
           "Military training",
           "Defence technology",
           "Dual-use technology",
           "Human-machine interface",
           "Human-machine teaming",
+          "Human performance",
+          "Aircrew performance",
           "AI Governance",
-          "Cognitive Warfare",
           "Autonomous Systems",
+          "Collaborative Combat Aircraft",
           "Military Transformation",
           "Next-Generation Training Environments",
+          "Live-Virtual-Constructive",
+          "Immersive simulation",
           "F-35",
+          "Canada's F-35 procurement",
           "NORAD",
           "NATO interoperability",
-          "Tech and data sovereignty"
+          "Tech and data sovereignty",
+          "Arctic Sovereignty",
+          "Cybersecurity",
+          "Data interoperability",
+          "Aerospace sector",
+          "RCAF/CAF",
+          "Multi-domain battlespace"
         ],
-        "employee": [
+        "brand": {
+          "@type": "Brand",
+          "name": "Sensor Fusion Capacity™"
+        },
+        "makesOffer": {
+          "@id": "https://5gcx.ai/#platform"
+        },
+        "contactPoint": [
+          {
+            "@type": "ContactPoint",
+            "contactType": "customer service",
+            "email": "amondou@5gcx.ai",
+            "availableLanguage": ["en", "fr"]
+          }
+        ],
+        "founder": [
           {
             "@type": "Person",
             "@id": "https://5gcx.ai/bios#angela-mondou",
@@ -104,11 +155,26 @@
             "@type": "Person",
             "@id": "https://5gcx.ai/bios#billie-flynn",
             "name": "Billie Flynn"
+          }
+        ],
+        "employee": [
+          {
+            "@type": "Person",
+            "@id": "https://5gcx.ai/bios#angela-mondou",
+            "name": "Angela Mondou",
+            "jobTitle": "President and CEO, 5GCx"
+          },
+          {
+            "@type": "Person",
+            "@id": "https://5gcx.ai/bios#billie-flynn",
+            "name": "Billie Flynn",
+            "jobTitle": "5th Generation Fighter Aircraft Development, Aerospace, & Defence Strategies"
           },
           {
             "@type": "Person",
             "@id": "https://5gcx.ai/bios#brendan-crymble",
-            "name": "Brendan Crymble"
+            "name": "Brendan Crymble",
+            "jobTitle": "Chief, Cx Training & Development Strategies"
           }
         ],
         "sameAs": [
@@ -140,7 +206,7 @@
           "@id": "https://5gcx.ai/#organization"
         },
         "inLanguage": "en-CA",
-        "dateModified": "2026-10-11",
+        "dateModified": "2026-10-28",
         "breadcrumb": {
           "@id": "https://5gcx.ai/bios#breadcrumb"
         },
@@ -160,6 +226,13 @@
           "url": "https://media.cwd-cdn.com/5GCx.ai/images/og/og-bios.jpg",
           "width": 1200,
           "height": 630
+        },
+        "speakable": {
+          "@type": "SpeakableSpecification",
+          "cssSelector": [
+            ".bio__role",
+            ".bio__body > p"
+          ]
         }
       },
       {
@@ -191,8 +264,8 @@
         },
         "url": "https://5gcx.ai/bios#angela-mondou",
         "image": "https://media.cwd-cdn.com/5GCx.ai/images/bio-angela.jpg",
-        "email": "amondou@5GCx.ai",
-        "description": "Angela Mondou is the CEO of 5GCx, a 5th Gen AI defence tech start-up company in the Aerospace sector. Angela has over 15+ years as a CEO, and has specialized in global technology leadership in AI, digital transformation, data interoperability and supply chain. Prior to the tech sector, she served as an officer in the Canadian Military and overseas with NATO command and UNPROFOR in Europe. Angela founded the Strategic Knowledge Exchange Forum, designed to deliver strategic dialogue between industry executives and government leaders on critical topics including the acceleration of AI Adoption, Cybersecurity and sharing threat intelligence, Arctic Sovereignty and National Security.",
+        "email": "amondou@5gcx.ai",
+        "description": "Angela Mondou is the CEO of 5GCx, a 5th Gen AI defence tech start-up company in the Aerospace sector. Angela has over 15+ years as a CEO, and has specialized in global technology leadership in AI, digital transformation, data interoperability and supply chain. Prior to the tech sector, she served as an officer in the Canadian Military and overseas with NATO command and UNPROFOR in Europe. Angela founded the Strategic Knowledge Exchange Forum, designed to deliver strategic dialogue between industry executives and government leaders on critical topics including the acceleration of AI Adoption, Cybersecurity and sharing threat intelligence, Arctic Sovereignty and National Security. Angela’s unique career path began with nine years as a military Captain specializing in global supply chain and air movements; serving with NATO command in Europe and with the UN Protection Force Peacekeeping (UNPROFOR) where she led the largest logistics deployment and peacekeeping movement at that time, into Bosnia and Herzegovina and Croatia. Angela then spent 20+ years in senior roles in the tech sector, working in North America and Europe in various roles, including vice-president product integration at BlackBerry, global program director at Nortel Networks, and leading a health-tech AI predictive analytics company. She is a member of the World Economic Forum AI Governance Alliance Working Group, Governance Chair of the ‘Ngen’, Canada’s Global Innovation Supercluster for Advanced Manufacturing and has held positions as Entrepreneur-in-Residence at the Ivey School of Business, EVP of Leadership with the International Women’s Forum, and Honorary Colonel of the Canadian Forces School of Aerospace, Technology and Engineering. Angela holds the Institute of Corporate Directors ICD.D designation and has received the C.D. for military service. She is the author of the leadership best-seller Hit the Ground Leading! Seize your leadership potential and do incredible things.",
         "knowsAbout": [
           "Artificial intelligence",
           "AI Governance",
@@ -201,7 +274,11 @@
           "Supply chain",
           "Cybersecurity",
           "Arctic Sovereignty",
-          "National Security"
+          "National Security",
+          "Aerospace sector",
+          "5th Gen AI defence tech",
+          "AI Adoption",
+          "Threat intelligence"
         ],
         "memberOf": [
           {
@@ -210,18 +287,67 @@
           },
           {
             "@type": "Organization",
-            "name": "Ngen, Canada’s Global Innovation Supercluster for Advanced Manufacturing"
+            "@id": "https://5gcx.ai/bios#ngen",
+            "name": "Ngen, Canada’s Global Innovation Supercluster for Advanced Manufacturing",
+            "description": "Governance Chair of the ‘Ngen’, Canada’s Global Innovation Supercluster for Advanced Manufacturing"
+          },
+          {
+            "@id": "https://5gcx.ai/bios#skef"
           }
         ],
-        "hasCredential": {
-          "@type": "EducationalOccupationalCredential",
-          "name": "ICD.D",
-          "recognizedBy": {
-            "@type": "Organization",
-            "name": "Institute of Corporate Directors"
+        "hasCredential": [
+          {
+            "@type": "EducationalOccupationalCredential",
+            "name": "ICD.D",
+            "recognizedBy": {
+              "@type": "Organization",
+              "name": "Institute of Corporate Directors"
+            }
+          },
+          {
+            "@type": "EducationalOccupationalCredential",
+            "name": "P. Log.",
+            "credentialCategory": "Professional designation"
           }
-        },
-        "award": "C.D. for military service",
+        ],
+        "award": [
+          "C.D. for military service",
+          "Honorary Colonel of the Canadian Forces School of Aerospace, Technology and Engineering"
+        ],
+        "hasOccupation": [
+          {
+            "@type": "Occupation",
+            "name": "Entrepreneur-in-Residence",
+            "occupationLocation": {
+              "@type": "Organization",
+              "name": "Ivey School of Business"
+            }
+          },
+          {
+            "@type": "Occupation",
+            "name": "EVP of Leadership",
+            "occupationLocation": {
+              "@type": "Organization",
+              "name": "International Women’s Forum"
+            }
+          },
+          {
+            "@type": "Occupation",
+            "name": "vice-president product integration",
+            "occupationLocation": {
+              "@type": "Organization",
+              "name": "BlackBerry"
+            }
+          },
+          {
+            "@type": "Occupation",
+            "name": "global program director",
+            "occupationLocation": {
+              "@type": "Organization",
+              "name": "Nortel Networks"
+            }
+          }
+        ],
         "sameAs": [
           "https://www.linkedin.com/in/angela-mondou"
         ]
@@ -237,8 +363,8 @@
         },
         "url": "https://5gcx.ai/bios#billie-flynn",
         "image": "https://media.cwd-cdn.com/5GCx.ai/images/bio-billie.jpg",
-        "email": "bflynn@5GCx.ai",
-        "description": "Billie Flynn is a retired RCAF Combat Commander, Fellow and Past President of the Society of Experimental Test Pilots, and former Senior F-35 Lightning II Experimental Test Pilot for Lockheed Martin. With over four decades of experience at the tactical and strategic levels in the Canadian Armed Forces, the US Air Force, and industry, Billie brings unmatched expertise in advanced aviation technologies, fifth-generation fighter aircraft, and global defence strategy. A seasoned global spokesperson, fluent in English and French, he is also a motivational speaker who translates lessons from high-risk test flying and combat leadership into insights for business and innovation.",
+        "email": "bflynn@5gcx.ai",
+        "description": "Billie Flynn is a retired RCAF Combat Commander, Fellow and Past President of the Society of Experimental Test Pilots, and former Senior F-35 Lightning II Experimental Test Pilot for Lockheed Martin. With over four decades of experience at the tactical and strategic levels in the Canadian Armed Forces, the US Air Force, and industry, Billie brings unmatched expertise in advanced aviation technologies, fifth-generation fighter aircraft, and global defence strategy. A seasoned global spokesperson, fluent in English and French, he is also a motivational speaker who translates lessons from high-risk test flying and combat leadership into insights for business and innovation. Billie Flynn is recognized globally as a senior experimental test pilot, combat squadron commander, and technical expert in advanced aviation technologies and future fighter aircraft. Over a 40-year career, he has tested and flown some of the world’s most advanced fighters, including the F-35 Lightning II and Eurofighter Typhoon, and has led strategic programs at the highest levels of government and industry. As Lockheed Martin’s Senior F-35 Test Pilot, Billie developed and flew the F-35 airshow demonstration unveiled at the 2017 Paris Air Show, while also serving as the global spokesman for the world’s largest defense program. His career includes 23 years with the Canadian Armed Forces, where he commanded 441 Tactical Fighter Squadron and Task Force Aviano during Operation Allied Force, flying combat missions over Kosovo and the Former Republic of Yugoslavia. His unit was awarded Battle Honours by Queen Elizabeth II, the first Canadian combat distinction since WWII. Billie holds engineering and business degrees from the Royal Military College of Canada, California State University Fresno, the University of Tennessee, and the University of Ottawa. A graduate of the U.S. Naval Test Pilot School, he is a Fellow of the Society of Experimental Test Pilots (SETP) and served as SETP President from 2010–2011.",
         "knowsAbout": [
           "F-35 Lightning II",
           "Eurofighter Typhoon",
@@ -247,7 +373,12 @@
           "Advanced aviation technologies",
           "Global defence strategy",
           "Combat leadership",
-          "Human performance"
+          "Human performance",
+          "441 Tactical Fighter Squadron",
+          "Task Force Aviano",
+          "Operation Allied Force",
+          "Collaborative Combat Aircraft",
+          "Cognitive workload"
         ],
         "knowsLanguage": [
           "en",
@@ -275,10 +406,62 @@
             "name": "U.S. Naval Test Pilot School"
           }
         ],
-        "memberOf": {
-          "@type": "Organization",
-          "name": "Society of Experimental Test Pilots"
-        },
+        "memberOf": [
+          {
+            "@type": "Organization",
+            "name": "Society of Experimental Test Pilots",
+            "alternateName": "SETP"
+          },
+          {
+            "@type": "Organization",
+            "name": "Canadian Armed Forces"
+          },
+          {
+            "@type": "Organization",
+            "name": "Royal Canadian Air Force"
+          }
+        ],
+        "hasOccupation": [
+          {
+            "@type": "Occupation",
+            "name": "Senior F-35 Lightning II Experimental Test Pilot",
+            "occupationLocation": {
+              "@type": "Organization",
+              "name": "Lockheed Martin"
+            }
+          },
+          {
+            "@type": "Occupation",
+            "name": "Commanding Officer",
+            "occupationLocation": {
+              "@type": "Organization",
+              "name": "441 Tactical Fighter Squadron"
+            }
+          },
+          {
+            "@type": "Occupation",
+            "name": "Commanding Officer",
+            "occupationLocation": {
+              "@type": "Organization",
+              "name": "Task Force Aviano"
+            }
+          },
+          {
+            "@type": "Occupation",
+            "name": "President",
+            "occupationLocation": {
+              "@type": "Organization",
+              "name": "Society of Experimental Test Pilots"
+            },
+            "startDate": "2010",
+            "endDate": "2011"
+          }
+        ],
+        "award": [
+          "Canada’s Aviation Hall of Fame (CAHF) Class of 2027",
+          "Battle Honours by Queen Elizabeth II, the first Canadian combat distinction since WWII",
+          "Fellow of the Society of Experimental Test Pilots"
+        ],
         "sameAs": [
           "https://www.linkedin.com/in/billie-flynn-9a7312a/",
           "https://billieflynn.com/"
@@ -294,28 +477,42 @@
         },
         "url": "https://5gcx.ai/bios#brendan-crymble",
         "image": "https://media.cwd-cdn.com/5GCx.ai/images/bio-brendan-crymble.jpg",
-        "email": "bcrymble@5GCx.ai",
+        "email": "bcrymble@5gcx.ai",
         "description": "Boeing 777/787 Airbus 330 / 340 Check Pilot. Although a proud military veteran as a member of the illustrious Royal Canadian Dragoons, Brendan’s passion for flight led to a career that spans over three decades and more than 20,000 hours as a Check Pilot on commercial heavy-jets, flying and living around the world.",
         "knowsAbout": [
           "Boeing 777/787",
           "Airbus 330/340",
           "Check Pilot",
-          "Commercial heavy-jets"
-        ]
+          "Commercial heavy-jets",
+          "Cx Training & Development Strategies"
+        ],
+        "memberOf": {
+          "@type": "Organization",
+          "name": "Royal Canadian Dragoons"
+        },
+        "hasOccupation": {
+          "@type": "Occupation",
+          "name": "Check Pilot",
+          "description": "Boeing 777/787 Airbus 330 / 340 Check Pilot"
+        }
       },
       {
         "@type": "Organization",
+        "@id": "https://5gcx.ai/bios#skef",
         "name": "Strategic Knowledge Exchange Forum",
+        "description": "Designed to deliver strategic dialogue between industry executives and government leaders on critical topics including the acceleration of AI Adoption, Cybersecurity and sharing threat intelligence, Arctic Sovereignty and National Security.",
         "founder": {
           "@id": "https://5gcx.ai/bios#angela-mondou"
         }
       },
       {
         "@type": "Book",
+        "@id": "https://5gcx.ai/bios#hit-the-ground-leading",
         "name": "Hit the Ground Leading! Seize your leadership potential and do incredible things.",
         "author": {
           "@id": "https://5gcx.ai/bios#angela-mondou"
-        }
+        },
+        "description": "Leadership best-seller by Angela Mondou."
       }
     ]
   }
@@ -418,9 +615,9 @@
 
         <div class="contact__info reveal">
           <ul class="comms">
-            <li><a href="mailto:amondou@5GCx.ai"><span class="comms__name">Angela Mondou</span><span class="comms__email">amondou@5GCx.ai</span></a></li>
-            <li><a href="mailto:bflynn@5GCx.ai"><span class="comms__name">Billie Flynn</span><span class="comms__email">bflynn@5GCx.ai</span></a></li>
-            <li><a href="mailto:bcrymble@5GCx.ai"><span class="comms__name">Brendan Crymble</span><span class="comms__email">bcrymble@5GCx.ai</span></a></li>
+            <li><a href="mailto:amondou@5gcx.ai"><span class="comms__name">Angela Mondou</span><span class="comms__email">amondou@5gcx.ai</span></a></li>
+            <li><a href="mailto:bflynn@5gcx.ai"><span class="comms__name">Billie Flynn</span><span class="comms__email">bflynn@5gcx.ai</span></a></li>
+            <li><a href="mailto:bcrymble@5gcx.ai"><span class="comms__name">Brendan Crymble</span><span class="comms__email">bcrymble@5gcx.ai</span></a></li>
           </ul>
 
           <p class="links-label">Links:</p>

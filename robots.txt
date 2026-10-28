@@ -1,8 +1,10 @@
 User-agent: *
 Allow: /
+Allow: /llms.txt
 
 # Search engines and AI search / answer engines
 User-agent: Googlebot
+User-agent: Googlebot-Image
 User-agent: Bingbot
 User-agent: Applebot
 User-agent: DuckDuckBot
@@ -13,6 +15,9 @@ User-agent: Claude-SearchBot
 User-agent: Claude-User
 User-agent: PerplexityBot
 User-agent: Perplexity-User
+User-agent: Amazonbot
+User-agent: MistralAI-User
+User-agent: Meta-ExternalFetcher
 Allow: /
 
 # AI model training crawlers
@@ -25,6 +30,13 @@ User-agent: CCBot
 User-agent: meta-externalagent
 User-agent: Bytespider
 User-agent: cohere-training-data-crawler
+User-agent: Diffbot
+User-agent: ImagesiftBot
+User-agent: Ai2Bot
+User-agent: FacebookBot
+User-agent: PetalBot
+User-agent: Omgilibot
+User-agent: Timpibot
 Disallow: /
 
 Sitemap: https://5gcx.ai/sitemap.xml
