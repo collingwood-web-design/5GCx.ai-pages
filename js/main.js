@@ -467,13 +467,16 @@
   var consented = false;
   try { consented = !!localStorage.getItem(COOKIE_KEY); } catch (e) {}
   if (!consented) {
+    var isFr = (document.documentElement.lang || "").toLowerCase().indexOf("fr") === 0;
     var banner = document.createElement("div");
     banner.className = "cookie-banner";
     banner.setAttribute("role", "dialog");
-    banner.setAttribute("aria-label", "Cookie notice");
-    banner.innerHTML =
-      '<p>We use cookies to keep the site running smoothly. See our <a href="privacy">Privacy Policy</a> for details.</p>' +
-      '<button type="button" class="btn btn--primary btn--sm cookie-banner__accept">Got it</button>';
+    banner.setAttribute("aria-label", isFr ? "Avis sur les cookies" : "Cookie notice");
+    banner.innerHTML = isFr
+      ? '<p>Nous utilisons des t&eacute;moins pour assurer le bon fonctionnement du site. Voir notre <a href="privacy">politique de confidentialit&eacute;</a> pour les d&eacute;tails.</p>' +
+        '<button type="button" class="btn btn--primary btn--sm cookie-banner__accept">Compris</button>'
+      : '<p>We use cookies to keep the site running smoothly. See our <a href="privacy">Privacy Policy</a> for details.</p>' +
+        '<button type="button" class="btn btn--primary btn--sm cookie-banner__accept">Got it</button>';
     document.body.appendChild(banner);
     requestAnimationFrame(function () {
       requestAnimationFrame(function () { banner.classList.add("is-visible"); });

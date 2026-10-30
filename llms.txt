@@ -24,6 +24,14 @@ Aligned with Canada’s defence policy and commitment to tech & data sovereignty
 - [Press](https://5gcx.ai/press): Press / Interviews / Links
 - [Privacy Policy](https://5gcx.ai/privacy): How 5GCx handles information on this website
 
+## French (fr-CA)
+
+- [Accueil](https://5gcx.ai/fr/): version française de l’accueil
+- [Biographies](https://5gcx.ai/fr/bios): Angela Mondou, Billie Flynn et Brendan Crymble
+- [Défense et commentaires stratégiques](https://5gcx.ai/fr/defence-strategic-commentary)
+- [Presse](https://5gcx.ai/fr/press)
+- [Politique de confidentialité](https://5gcx.ai/fr/privacy)
+
 ## Bios
 
 ### Angela Mondou, ICD.D C.D. P. Log.

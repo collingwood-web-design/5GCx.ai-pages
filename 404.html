@@ -5,8 +5,14 @@
   <script>
     (function () {
       var host = location.hostname;
-      var first = location.pathname.split("/")[1];
-      var href = /\.github\.io$/.test(host) && first ? "/" + first + "/" : /(^|\.)5gcx\.ai$/i.test(host) ? "/" : null;
+      var parts = location.pathname.split("/").filter(Boolean);
+      var href = null;
+      if (/\.github\.io$/.test(host) && parts[0]) {
+        href = "/" + parts[0] + "/";
+        if (parts[1] === "fr") href += "fr/";
+      } else if (/(^|\.)5gcx\.ai$/i.test(host)) {
+        href = parts[0] === "fr" ? "/fr/" : "/";
+      }
       if (!href) return;
       var base = document.createElement("base");
       base.href = href;
@@ -26,7 +32,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
 
-  <link rel="stylesheet" href="css/styles.css?v=33">
+  <link rel="stylesheet" href="css/styles.css?v=34">
 
   <script>document.documentElement.classList.add("js");</script>
 </head>
@@ -41,6 +47,7 @@
       <a class="logo" href="./" aria-label="5GCx.ai home">
         <span class="logo__mark">5GC<span>x</span></span><span class="logo__ai">.ai</span>
       </a>
+      <div class="header__right">
       <nav class="nav" id="site-nav" aria-label="Main">
         <a href="./">Home</a>
         <a href="bios">Bios</a>
@@ -48,10 +55,16 @@
         <a href="press">Press</a>
         <a class="btn btn--primary btn--sm" href="./#contact">Contact Us</a>
       </nav>
+            <nav class="lang-switch" aria-label="Language / Langue">
+        <a href="./" hreflang="en" lang="en" aria-current="page">EN</a>
+        <span class="lang-switch__sep" aria-hidden="true">/</span>
+        <a href="fr/" hreflang="fr" lang="fr">FR</a>
+      </nav>
       <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
         <span></span><span></span>
         <span class="sr-only">Menu</span>
       </button>
+      </div>
     </div>
   </header>
 
@@ -80,6 +93,6 @@
     </div>
   </footer>
 
-  <script src="js/main.js?v=4" defer></script>
+  <script src="js/main.js?v=5" defer></script>
 </body>
 </html>

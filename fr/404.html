@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="fr-CA">
+<head>
+  <meta charset="utf-8">
+  <script>
+    (function () {
+      var host = location.hostname;
+      var parts = location.pathname.split("/").filter(Boolean);
+      var href = null;
+      if (/\.github\.io$/.test(host) && parts[0]) {
+        href = "/" + parts[0] + "/";
+        if (parts[1] === "fr") href += "fr/";
+      } else if (/(^|\.)5gcx\.ai$/i.test(host)) {
+        href = parts[0] === "fr" ? "/fr/" : "/";
+      }
+      if (!href) return;
+      var base = document.createElement("base");
+      base.href = href;
+      document.head.appendChild(base);
+    })();
+  </script>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Page introuvable | 5GCx.ai</title>
+  <meta name="robots" content="noindex">
+  <meta name="theme-color" content="#03060c">
+
+  <link rel="icon" href="https://media.cwd-cdn.com/5GCx.ai/images/favicon-32.png" sizes="32x32">
+  <link rel="icon" href="https://media.cwd-cdn.com/5GCx.ai/images/favicon-192.png" sizes="192x192">
+  <link rel="apple-touch-icon" href="https://media.cwd-cdn.com/5GCx.ai/images/favicon-180.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="../css/styles.css?v=34">
+
+  <script>document.documentElement.classList.add("js");</script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Aller au contenu</a>
+
+  <div class="fx-grid" aria-hidden="true"></div>
+  <div class="fx-scan" aria-hidden="true"></div>
+
+  <header class="site-header" id="site-header">
+    <div class="container header__inner">
+      <a class="logo" href="./" aria-label="Accueil 5GCx.ai">
+        <span class="logo__mark">5GC<span>x</span></span><span class="logo__ai">.ai</span>
+      </a>
+      <div class="header__right">
+      <nav class="nav" id="site-nav" aria-label="Principal">
+        <a href="./">Accueil</a>
+        <a href="bios">Biographies</a>
+        <a href="defence-strategic-commentary">Défense et commentaires stratégiques</a>
+        <a href="press">Presse</a>
+        <a class="btn btn--primary btn--sm" href="./#contact">Nous joindre</a>
+      </nav>
+            <nav class="lang-switch" aria-label="Language / Langue">
+        <a href="../" hreflang="en" lang="en">EN</a>
+        <span class="lang-switch__sep" aria-hidden="true">/</span>
+        <a href="./" hreflang="fr" lang="fr" aria-current="page">FR</a>
+      </nav>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+        <span></span><span></span>
+        <span class="sr-only">Menu</span>
+      </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="page-head page-head--404">
+      <div class="container">
+        <h1 class="page-head__title" data-scramble>404</h1>
+        <p class="eyebrow page-head__sub"><span class="pulse"></span><span>Page <span class="eyebrow__rest">introuvable</span></span></p>
+        <a class="btn btn--primary" href="./">Accueil</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer__inner">
+      <a class="logo" href="./" aria-label="Accueil 5GCx.ai">
+        <span class="logo__mark">5GC<span>x</span></span><span class="logo__ai">.ai</span>
+      </a>
+      <nav class="footer__nav" aria-label="Pied de page">
+        <a href="./">Accueil</a>
+        <a href="bios">Biographies</a>
+        <a href="defence-strategic-commentary">Défense et commentaires stratégiques</a>
+        <a href="press">Presse</a>
+      </nav>
+      <p class="footer__legal">Copyright &copy; <span id="year">2026</span> | 5GCx <span class="sep">//</span> <a href="privacy">Politique de confidentialité</a> <span class="sep">//</span> Conception et développement : <a href="https://www.collingwoodwebdesign.com/" target="_blank" rel="noopener">Collingwood Web Design</a></p>
+    </div>
+  </footer>
+
+  <script src="../js/main.js?v=5" defer></script>
+</body>
+</html>
